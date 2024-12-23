@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"'>'
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    .header{
+        border: 1px solid black;
+        width: 5%;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 1350px;
+    margin-top: -72px;
+    background-color: white;
+    }
+    .header2{
+        border: 1px solid black;
+        width: 10%;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 1500px;
+    margin-top: -31px;
+    background-color: orange;
+    color: black;
+    }
+    .header3{
+        border: 1px solid black;
+        width: 10%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: orange;
+    color: black;
+
+    }
+    .box1{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 200px;
+        margin-top: 70px;
+    }
+    .box2{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 700px;
+        margin-top: -169px;
+    }
+    .box3{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 1200px;
+        margin-top: -169px;
+    }
+    .ox1{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 200px;
+        margin-top: 70px;
+        background-color: orange;
+        color: black;
+    }
+    .ox2{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 700px;
+        margin-top: -175px;
+        background-color: orange;
+        color: black;
+    }
+    .ox3{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 1200px;
+        margin-top: -177px;
+        background-color: orange;
+        color: black;
+    }
+    .butt1{
+        border: 1px solid black;
+        width: 10%;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: orange;
+    color: black;
+    margin-left: 70px;}    
+    .butt2{
+        border: 1px solid black;
+        width: 5%;
+        margin-left: 300px;
+        margin-top: -30px;
+    padding: 5px;
+    border-radius: 20px;
+    }
+    .main{
+        width: 40%;
+    }
+    .sub1{
+        margin-left: 1000px;
+        margin-top: -200px;
+        width: 40%;
+    }
+    .sub2{
+        width: 30%;
+        margin-top: 90px;
+        margin-left: 100px;
+    }
+    .x1{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 200px;
+        margin-top: 70px;
+        background-color: orange;
+        color: black;
+    }
+    .x2{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 700px;
+        margin-top: -157px;
+        background-color: orange;
+        color: black;
+    }
+    .x3{
+        width: 20%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,1);
+        border-radius: 5px;
+        margin-left: 1200px;
+        margin-top: -159px;
+        background-color: orange;
+        color: black;
+    }
+    table,tr,td,th{
+        border: 1px solid orange;
+        padding: 20px;
+        height: 20%;
+    }
+    table{
+        border-collapse: collapse;
+        width: 80%;
+    }
+    button{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        width: 30%;
+    }
+    
+    .but1{
+        font-weight: bold;
+    }
+    .but2{
+        font-weight: bold;
+    }
+    .butt3{
+        border: 1px solid black;
+        width: 5%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color:gainsboro;
+    width: 10%;
+    }
+    .conclusion{
+        background-color: gray;
+        width: 80%;
+    }
+
+
+</style>
+<body>
+    <img style="width: 100px; margin-left: 2%;" src="th (19).jpeg">
+    <div class="header">
+        <center>
+        <a href="registration.html">Sign In</a></center>
+    </div><div class="header2"><center>
+        <a href="home.html">Get Started For Free</a></center>
+    </div>
+    <center>
+        <h1>OpenWeather DashBoard</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio optio assumenda totam non architecto natus nulla ipsam accusantium vero provident?</p>
+        <p>Simple and Powerful.Tailored to your needs</p>
+        <div class="header3">
+        <a href="home.html">Get Started For Free</a>
+    </div>
+    <img style="margin-top: 20px;width: 80%;" src="images.jpeg">
+    <h1>Our Advanced Tolls for your Business</h1>
+    </center>
+    <div class="box1">
+    <i class="fa-solid fa-headphones"></i>
+    <h3>Expert Consultations</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Iusto, sequi?</p></div>
+    <div class="box2">
+        <i class="fa-regular fa-square"></i>
+        <h3>Tailored To your industry</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi?</p>
+    </div>
+    <div class="box3">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Global coverage</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet.</p>
+    </div>
+    <center>
+        <h1 style="margin-top: 7%;">What's inside?</h1></center>
+        <div class="ox1">
+            <h2>Detailed Weather Reports</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Iusto, sequi?</p>
+            <i class="fa-solid fa-headphones"></i></div>
+        <div class="ox2">
+            <h2>Experts Consulatios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi?</p>
+            <i class="fa-regular fa-square"></i>
+        </div>
+        <div class="ox3">
+            <h2>Local-Specific Weather Overview</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet.</p>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <center><h1 style="margin-top: 7%;">Dashboard Features</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque sunt corporis nisi sit illum?</p></center>
+        <div class="main">
+        <h1>Comprehensive Weather Reports</h1>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta alias nihil provident dolor asperiores ipsum eligendi consequatur accusantium nobis vel.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptate porro dolor possimus nostrum delectus harum sapiente. Quis, voluptas vitae?</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, soluta! Sapiente earum laborum quis numquam ea magni saepe cum impedit!</li></ul></div>
+        <div class="butt1"><center>
+            <a>View Sample reports</a></center>
+        </div>
+        <div class="butt2"><center>
+            <a style="background-color: white;border-radius: 5px;"href="aboutus.html">Contact Us</a></center>
+        </div>
+        <img style="margin-left: 1000px;margin-top: -200px;width: 40%;"  src="maxresdefault.jpg">
+        <img style="width: 30%;margin-top: 8px;" src="th(20).jperg.png">
+        <div class="sub1">
+            <h1>Interactive Weather Visualisation</h1>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta alias nihil provident dolor asperiores ipsum eligendi consequatur accusantium nobis vel.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptate porro dolor possimus nostrum delectus harum sapiente. Quis, voluptas vitae?</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, soluta! Sapiente earum laborum quis numquam ea magni saepe cum impedit!</li></ul>
+        </div>
+        <div class="sub2">
+        <h1>Weather Triggers and Alerts Features</h1>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta alias nihil provident dolor asperiores ipsum eligendi consequatur accusantium nobis vel.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptate porro dolor possimus nostrum delectus harum sapiente. Quis, voluptas vitae?</li></ul>
+        </div>        
+        <img style="margin-left: 1000px;margin-top: -200px;width: 40%;"  src="35.png">
+        <center>
+            <h1 style="margin-top: 7%;">How it helps your Business</h1></center>
+            <div class="x1">
+                <h2>Detailed Weather Reports</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Iusto, sequi?</p></i></div>
+            <div class="x2">
+                <h2>Experts Consulatios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi?</p>
+            </div>
+            <div class="x3">
+                <h2>Local-Specific Weather Overview</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet.</p>
+            </div>
+        <center>
+            <h1 style="margin-top: 70px;">Choose the plan that fits your needs</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, animi?</p>
+        <center><table>
+            <thead><tr>
+                <th></th>
+                <th>for individuals<br><div class="but1">
+                Basic</div><br>Free<br><center><button>Sign Up for Free</button></center></th>
+                <th>For Business<br>Premium<br><div class="but2">Price on request</div><br><center>
+                <button>Contact us</button></center></th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Location Limits</td>
+                    <td>3 locations</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Weather triggers amount</td>
+                    <td>3 triggers</td>
+                    <td>unlimited</td>
+                </tr>
+                <tr>
+                    <td>Layered Weather maps</td>
+                    <td>/</td>
+                    <td>/</td>
+                </tr>
+                <tr>
+                    <td>Layered Weather maps</td>
+                    <td>/</td>
+                    <td>/</td>
+                </tr>
+                <tr>
+                    <td>industry specific customisation</td>
+                    <td>/</td>
+                    <td>/</td>
+                </tr>
+            </tbody>
+        </table></center>
+        <div class="conclusion">
+    <h2 style="color: red;">Need something tailored?</h2>
+    <h3>The OpenWeather Map API is highly customizable and can be tailored to your specific needs.</h3>
+    <div class="butt3"><center>
+        <a href="aboutus.html">Contact Us</a></center>
+    </div>
+        </div> 
+</center> 
+</body>
+</html>
